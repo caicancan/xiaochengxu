@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<view class='searchbar'>
+<view class='searchbar-in'>
+<image class='icon-search'src='/images/icon_search@2x.png'></image>
+<text>搜索</text>
+</view>
+</view>
+<!--首页轮播图-->
+<swiper class='index-swiper' indicator-dots='true' indicator-active-color='white' autoplay='true'
+interval='2500' circular='true'
+previous-margin='15rpx'
+next-margin='15rpx'>
+<swiper-item >
+<image src='/upload/banner1.png'></image>
+</swiper-item>
+<swiper-item class="index-swiper-img">
+<image src='/upload/banner2.png'></image>
+</swiper-item>
+<swiper-item class="index-swiper-img">
+<image src='/upload/banner3.png'></image>
+</swiper-item>
+</swiper>
+<!--首页导航分区-->
+<view class='index-nav'>
+</view>
+
