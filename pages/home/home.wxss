@@ -1,4 +1,7 @@
 /* pages/home/home.wxss */
+page{
+  background-color: #f4f4f4;
+}
 .searchbar{
   background-color: #ff2d4a;
   padding: 20rpx 16rpx;
@@ -27,4 +30,18 @@
 .index-swiper image{
   width: 750rpx;
   height: 340rpx;
+}
+.index-nav{
+  display: flex;
+  padding: 24rpx 0 29rpx 0;
+  background-color: #fff;
+}
+.index-nav-img{
+  width: 128rpx;
+  height: 140rpx;
+}
+.index-nav-item{
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }

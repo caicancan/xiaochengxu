@@ -22,5 +22,22 @@ next-margin='15rpx'>
 </swiper>
 <!--首页导航分区-->
 <view class='index-nav'>
+<navigator url='' class='index-nav-item' hover-class='none'>
+<image 
+class='index-nav-img'
+src='/upload/icon_index_nav_1@2x.png'></image>
+</navigator>
+<navigator url=''class='index-nav-item' hover-class='none'>
+<image 
+class='index-nav-img'src='/upload/icon_index_nav_2@2x.png'></image>
+</navigator>
+<navigator url=''class='index-nav-item' hover-class='none'>
+<image 
+class='index-nav-img'src='/upload/icon_index_nav_3@2x.png'></image>
+</navigator>
+<navigator url=''class='index-nav-item'hover-class='none'>
+<image 
+class='index-nav-img'src='/upload/icon_index_nav_4@2x.png'></image>
+</navigator>
 </view>
 
