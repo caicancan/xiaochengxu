@@ -45,3 +45,30 @@ page{
   justify-content: center;
   flex: 1;
 }
+.floor{
+  margin-top: 30rpx;
+}
+.floor-head-img{
+  width: 750rpx;
+  height: 59rpx;
+}
+.floor-body{
+  background-color: #fff;
+  padding: 20rpx 0 10rpx 16rpx;
+  display: flex;
+}
+.floor-body-right{
+  display: flex;
+  flex-wrap: wrap;
+}
+.floor-body-img-link{
+  margin: 0 10rpx 10rpx 0 ;
+}
+.floor-body-left-img{
+  width: 232rpx;
+  height: 386rpx;
+}
+.floor-body-right-img{
+  width: 233rpx;
+  height: 188rpx;
+}

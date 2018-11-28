@@ -6,23 +6,20 @@
 </view>
 </view>
 <!--首页轮播图-->
-<swiper class='index-swiper' indicator-dots='true' indicator-active-color='white' autoplay='true'
+<!-- <view data-num='{{num+2}}'>这是一段文字{{msg}}</view> -->
+<swiper class='index-swiper' indicator-dots='{{true}}' indicator-active-color='white' autoplay='true'
 interval='2500' circular='true'
 previous-margin='15rpx'
 next-margin='15rpx'>
+<block wx:for="{{swiperArr}}" wx:for-index="i" wx:for-item="item" wx:key="">
 <swiper-item >
-<image src='/upload/banner1.png'></image>
+<image src="{{item.image_src}}" data-index="{{i}}"></image>
 </swiper-item>
-<swiper-item class="index-swiper-img">
-<image src='/upload/banner2.png'></image>
-</swiper-item>
-<swiper-item class="index-swiper-img">
-<image src='/upload/banner3.png'></image>
-</swiper-item>
+</block>
 </swiper>
 <!--首页导航分区-->
 <view class='index-nav'>
-<navigator url='' class='index-nav-item' hover-class='none'>
+<navigator url='' class='index-nav-item' hover-class='none' wx:if="{{6>5}}">
 <image 
 class='index-nav-img'
 src='/upload/icon_index_nav_1@2x.png'></image>
@@ -39,5 +36,38 @@ class='index-nav-img'src='/upload/icon_index_nav_3@2x.png'></image>
 <image 
 class='index-nav-img'src='/upload/icon_index_nav_4@2x.png'></image>
 </navigator>
+</view>
+<!-- 首页楼层 -->
+<view class='floor'>
+  <!-- 首页标题 -->
+  <view class='floor-head' bindtap='testHandle'>
+    <navigator url='/pages/home/home' catchtap='sonHandle' class='floor-head-link' data-para='函数参数'>
+      <image class='floor-head-img' src='/upload/pic_floor01_title@2x.png'></image>
+    </navigator>
+  </view>
+  <!-- 楼层主体  -->
+  <view class='floor-body'>
+    <!-- 主体左侧大图  -->
+    <view class='floor-body-left'>
+      <navigator class='floor-body-img-link' url=''>
+        <image class='floor-body-left-img' src='/upload/pic_floor01_1@2x.png'></image>
+      </navigator>
+    </view>
+    <!-- 主体右侧小图  -->
+    <view class='floor-body-right'>
+      <navigator class='floor-body-img-link' url=''>
+        <image class='floor-body-right-img' src='/upload/pic_floor01_2@2x.png'></image>
+      </navigator>
+      <navigator class='floor-body-img-link' url=''>
+        <image class='floor-body-right-img' src='/upload/pic_floor01_3@2x.png'></image>
+      </navigator>
+      <navigator class='floor-body-img-link' url=''>
+        <image  class='floor-body-right-img' src='/upload/pic_floor01_4@2x.png'></image>
+      </navigator>
+      <navigator class='floor-body-img-link' url=''>
+        <image class='floor-body-right-img' src='/upload/pic_floor01_5@2x.png'></image>
+      </navigator>
+    </view>
+  </view>
 </view>
 

@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wx970016ae912696f6",
+	"appid": "wxa016cbd33128f7f4",
 	"projectname": "yougoushop",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -27,13 +27,24 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/home/home",
+					"query": "name=\"itcast\"&page=100"
+				}
+			]
 		}
 	}
 }
